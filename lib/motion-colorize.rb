@@ -12,7 +12,7 @@ $LOAD_PATH.each do |file|
 end
 
 if @colorize.nil?
-  raise "You need to require the 'colorize' gem"
+  raise "You need to install the 'colorize' gem"
 end
 
 @colorize = File.join(@colorize, "colorize.rb")
