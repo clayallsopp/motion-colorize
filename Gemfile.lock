@@ -1,0 +1,16 @@
+PATH
+  remote: .
+  specs:
+    motion-colorize (1.0)
+      colorize (~> 0.5.8)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.5.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  motion-colorize!
