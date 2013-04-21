@@ -17,11 +17,28 @@ or add it to your `Gemfile`:
 
 ## Usage
 
-motion-colorize really does nothing except add the [colorize gem](https://github.com/fazibear/colorize) to your project. Yes, really, that's it. So refer to it's [documentation](https://github.com/fazibear/colorize/blob/master/README.rdoc).
+motion-colorize really does nothing except add the [colorize gem](https://github.com/fazibear/colorize) to your project. Yes, really, [that's it](https://github.com/clayallsopp/motion-colorize/blob/master/lib/motion-colorize.rb).
+
+```ruby
+class AppDelegate
+  def application(application, didFinishLaunchingWithOptions:launchOptions)
+    puts "This is blue".colorize(:blue)
+    puts "This is light blue".colorize(:light_blue)
+    puts "This is light blue with white background".colorize( :color => :light_blue, :background => :white )
+    puts "This is blue on white and underline".colorize( :blue ).on_white.underline
+    puts "This is black and yellow black and yellow".yellow
+    puts "This is red".red.on_yellow
+
+    true
+  end
+end
+```
+
+For a more complete reference, refer to colorize's [documentation](https://github.com/fazibear/colorize/blob/master/README.rdoc).
 
 ## Contact
 
-Clay Allsopp ([http://clayallsopp.com](http://clayallsopp.com))
+Clay Allsopp ([http://clayallsopp.com](http://clayallsopp.com)) (really though, this hardly counts as a/my gem, I'm just happy to be here.)
 
 - [http://twitter.com/clayallsopp](http://twitter.com/clayallsopp)
 - [clay@usepropeller.com](clay@usepropeller.com)
